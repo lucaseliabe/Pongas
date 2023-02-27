@@ -1,0 +1,32 @@
+/* Navbar.js*/
+.navbar {
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    background-color: #707070;
+
+    border-bottom: 2px solid #000;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center
+}
+
+.navbar-links li {
+    display: flex;
+    margin: 0px 50px;
+    padding: 5px;
+    min-width: 150px;
+    min-height: 20px;
+
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+    border-radius: 5px;
+    background-color: #fff;
+
+    border: 1px solid #505050;
+}
