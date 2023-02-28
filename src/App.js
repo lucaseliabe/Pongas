@@ -1,6 +1,8 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import Placar from "./components/Placar/Placar";
+import Placar from "./pages/Placar/Placar.js";
+import Jogadores from './pages/Jogadores/Jogadores';
 
 
 function App() {
@@ -9,7 +11,12 @@ function App() {
       <div className='background'></div>
       <NavBar />
       <div className='content'>
-        <Placar/>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Placar />}></Route>
+            <Route path='/Jogadores' element={<Jogadores />}></Route>
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );

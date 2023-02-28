@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Card from './Card';
+import CardScore from '../../components/Card/CardScore.js';
 import './Placar.css'
 
 const Placar = () => {
@@ -24,7 +24,7 @@ const Placar = () => {
         <div className='scoreboard-row'>
 
             <div className='scoreboard-player'>
-                <Card player={{
+                <CardScore player={{
                     name: 'Lucas',
                     score: player1Score,
                     src_img: '/src/player_lucas.jpg'
@@ -35,11 +35,7 @@ const Placar = () => {
             <div className='scoreboard-vs'>X</div>
 
             <div className='scoreboard-player'>
-                <Card player={{
-                    name: 'Japa',
-                    score: player2Score,
-                    src_img: '/src/player_japa.jpg'
-                }}/>
+                <CardScore />
                 <button onClick={handlePlayer2Score}>+</button>
             </div>
 
@@ -50,6 +46,6 @@ const Placar = () => {
         </div>
       </div>
     );
-}
+};
 
-export default Placar
+export default Placar;

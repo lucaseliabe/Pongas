@@ -6,7 +6,9 @@ const NavBar = () => {
     <div className='navbar'>
         <ul className='navbar-links'>
             <li>
-                Placar
+                <a href='/'>
+                    Placar
+                </a>
             </li>
 
             <li>
@@ -14,7 +16,9 @@ const NavBar = () => {
             </li>
 
             <li>
-                Configurações
+                <a href='/Jogadores'>
+                    Jogadores
+                </a>
             </li>
         </ul>
     </div>
